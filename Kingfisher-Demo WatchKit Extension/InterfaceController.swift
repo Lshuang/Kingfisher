@@ -46,7 +46,7 @@ class InterfaceController: WKInterfaceController {
         imageView.kf_setImageWithURL(NSURL(string: URLString!)!, placeholderImage: nil, optionsInfo: [.Options: KingfisherOptions.CacheInWatch], progressBlock: { (receivedSize, totalSize) -> () in
             
         }) { (error, cacheType, imageURL, cachedInWatch) -> () in
-            println("\(imageURL) : \(cachedInWatch)")
+            print("\(imageURL) : \(cachedInWatch)")
         }
     }
 
@@ -64,7 +64,7 @@ class InterfaceController: WKInterfaceController {
         imageView.kf_setImageWithURL(NSURL(string: URLString!)!, placeholderImage: nil, optionsInfo: [.Options: KingfisherOptions.CacheInWatch], progressBlock: { (receivedSize, totalSize) -> () in
             
             }) { (error, cacheType, imageURL, cachedInWatch) -> () in
-                println("\(imageURL) : \(cachedInWatch)")
+                print("\(imageURL) : \(cachedInWatch)")
         }
     }
     
